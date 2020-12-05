@@ -20,7 +20,7 @@ body{
 main{
   width: 80%;
   max-width: 800px;
-  margin: auto;
+  margin: 50px auto;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(221, 221, 221, 0.5));
   background-size: cover;
   backdrop-filter: blur(1000px);
@@ -32,8 +32,9 @@ main{
   border-radius: 8px;
   color: #333;
   display: grid;
-  grid-template-rows: 1fr 1fr 7fr;
+  grid-template-rows: 1fr 1fr 14fr;
   padding: 10px;
+  padding-bottom: 40px;
 }
 
 #title {
@@ -52,7 +53,7 @@ main{
 #survey-form{
   box-shadow: -2px -2px 10px rgba(158, 158, 158, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   align-self: flex-start;
   justify-self: center;
   background: rgba(255, 255, 255, 0.5);
@@ -67,17 +68,51 @@ main{
   margin: 5px 0;
 }
 
-#survey-form label{
+#survey-form label, #survey-form p{
   display: block;
   font-size: 1.3rem;
   margin: 8px 0;
   font-weight: 500;
 }
 
-#survey-form input,#survey-form select{
+#survey-form > .form-group > input, #survey-form select{
   width: 100%;
   font-size: 1.1rem;
   padding: 6px 10px;
   background: rgba(255,255,255,0.4);
   border-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+#radio-group label, #checkbox-group label{
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  font-weight: 400;
+}
+
+.radio, .checkbox{
+  align-self: center;
+  margin-right: 10px;
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+  background: rgba(255,255,255,0.4);
+}
+
+#text-area{
+  width: 100%;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+#survey-form > .form-group > input[type=submit]{
+  background: rgba(0, 141, 75, 0.2);
+  cursor: pointer;
+}
+
+
+#survey-form > .form-group > input[type=submit]:hover{
+  background: rgb(0, 141, 75);
+  color: #fff;
+  cursor: pointer;
 }

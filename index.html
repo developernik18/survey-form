@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey form</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
   <main>
@@ -24,7 +25,7 @@
       </div>
       
       <div class="form-group">
-        <label for="age" id="number-label">Age (Optional)</label>
+        <label for="age" id="number-label">Age (optional)</label>
         <input type="number" name="age" id="age" min="5" max="100" placeholder="Enter your age">  
       </div>
       
@@ -40,7 +41,50 @@
         </select>
       </div>
 
+      <div class="form-group" id="radio-group">
+        <p>Which technology do you prefer?</p>
+        <label for="wordpress">
+          <input type="radio" name="tech-prefernce" id="wordpress" class="radio">
+          wordpress
+        </label>
+        <label for="webflow">
+          <input type="radio" name="tech-prefernce" id="webflow" class="radio">
+          webflow
+        </label>
+        <label for="react">
+          <input type="radio" name="tech-prefernce" id="react" class="radio">
+          react
+        </label>
+        <label for="other-tech">
+          <input type="radio" name="tech-prefernce" id="other-tech" class="radio">
+          others
+        </label>
+      </div>
 
+      <div class="form-group" id="checkbox-group">
+        <p>What features do you want in your website?</p>
+        <label for="responsive">
+          <input type="checkbox" value="responsive" name="feature" id="responsive" class="checkbox">
+          responsive layout
+        </label>
+        <label for="fluid">
+          <input type="checkbox" value="fluid" name="feature" id="fluid" class="checkbox">
+          fluid layout
+        </label>
+        <label for="seo">
+          <input type="checkbox" value="seo" name="feature" id="seo" class="checkbox">
+          search engine optimization (SEO)
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="text-area">Any comments or suggestions:</label>
+        <textarea name="comments" id="text-area" cols="60" rows="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
     </form>
   </main>
 </body>
