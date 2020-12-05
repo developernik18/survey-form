@@ -116,3 +116,21 @@ main{
   color: #fff;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  main{
+    width: 100%;
+    margin: 50px auto;
+    background: transparent;
+    background-size: cover;
+    backdrop-filter: blur(1000px);
+    box-shadow: none;
+    border-style: none;
+    color: #333;
+    display: grid;
+    grid-template-rows: 1fr 1fr 16fr;
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+   
+}
